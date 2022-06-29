@@ -1,11 +1,12 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import NotesListPage from "./pages/NotesListPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>My App</p>
-      </header>
+      <Header />
+      <NotesListPage />
     </div>
   );
 }
