@@ -133,7 +133,7 @@ django_heroku.settings(locals())
 
 STATIC_URL = "/static/"
 
-STATICFILES_DIRS =[BASE_DIR / 'frontend/build/static']
+STATICFILES_DIRS = [BASE_DIR / "frontend/build/static"]
 
 # For React.js Development
 # CORS_ALLOWED_ORIGINS = [
