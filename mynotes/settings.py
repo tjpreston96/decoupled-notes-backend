@@ -132,7 +132,8 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS =[BASE_DIR / 'frontend/build/static']
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+# For React.js Development
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+# ]
