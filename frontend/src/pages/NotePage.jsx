@@ -19,18 +19,8 @@ const NotePage = () => {
     setNote(data);
   };
 
-  let updateNote = async () => {
-    fetch(`/api/notes/${params.id}/update/`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(note),
-    });
-  };
-
   let createNote = async () => {
-    fetch(`/api/notes/create/`, {
+    fetch(`/api/notes/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,8 +29,18 @@ const NotePage = () => {
     });
   };
 
+  let updateNote = async () => {
+    fetch(`/api/notes/${params.id}/`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(note),
+    });
+  };
+
   let deleteNote = async () => {
-    fetch(`/api/notes/${params.id}/delete/`, {
+    fetch(`/api/notes/${params.id}/`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
