@@ -1,1 +1,1 @@
-# Django_React_Notes
+# decoupled-notes-backend
