@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path("", views.get_routes, name="routes"),
-    path("notes/", views.get_notes, name="notes"),
-    path("notes/<int:pk>/", views.get_note, name="note"),
+    path("api/notes/", views.get_notes, name="notes"),
+    path("api/notes/<int:pk>/", views.get_note, name="note"),
 ]
