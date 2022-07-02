@@ -7,31 +7,31 @@ from .serializers import NoteSerializer
 def routes_list(request):
     routes = [
         {
-            "Endpoint": "/notes/",
+            "Endpoint": "/api/notes/",
             "method": "GET",
             "body": None,
             "description": "Returns an array of notes",
         },
         {
-            "Endpoint": "/notes/id",
+            "Endpoint": "/api/notes/id/",
             "method": "GET",
             "body": None,
             "description": "Returns a single note object",
         },
         {
-            "Endpoint": "/notes/",
+            "Endpoint": "/api/notes/",
             "method": "POST",
             "body": {"body": ""},
             "description": "Creates new note with data sent in post request",
         },
         {
-            "Endpoint": "/notes/id/",
+            "Endpoint": "/api/notes/id/",
             "method": "PUT",
             "body": {"body": ""},
             "description": "Creates an existing note with data sent in post request",
         },
         {
-            "Endpoint": "/notes/id/",
+            "Endpoint": "/api/notes/id/",
             "method": "DELETE",
             "body": None,
             "description": "Deletes and exiting note",
